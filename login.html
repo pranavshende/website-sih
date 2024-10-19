@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: rgb(94, 85, 85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      width: 900px;
+      max-width: 100%;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .form-container {
+      padding: 40px;
+      width: 50%;
+    }
+
+    .form-container h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .form-container p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .form-container label {
+      display: block;
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .form-container input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .form-container .checkbox-label {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .form-container .forgot-password {
+      float: right;
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .form-container .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .form-container button:hover {
+      background-color: #357ABD;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social-login button {
+      width: 48%;
+      padding: 12px;
+      background-color: #f4f4f4;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-login button img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .image-container {
+      width: 50%;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Form Section -->
+    <div class="form-container">
+      <h1>Login</h1>
+      <p>Doesn’t have an account yet? <a href="Signup.html">Sign-up</a></p>
+      <form action="#">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="alumconnect@example.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter 6 characters or more" required>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <input type="checkbox" id="remember-me">
+            <label class="checkbox-label" for="remember-me">Remember me</label>
+          </div>
+          <a href="#" class="forgot-password">Forget Password?</a>
+        </div>
+
+        <button type="submit">LOGIN</button>
+
+        <div class="social-login">
+          <button>
+            <img src="google.png" alt="Google">
+            Google
+          </button>
+          <button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            LinkedIn
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right Image Section -->
+    <div class="image-container">
+      <img src="login img.png" alt="Alumni Illustration">
+    </div>
+  </div>
+</body>
+</html>
