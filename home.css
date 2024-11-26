@@ -568,3 +568,116 @@ transform: translateY(2px);
     color: #666;
     margin-bottom: 40px;
   }
+  /* For devices with a max width of 1024px (tablets and smaller) */
+@media (max-width: 1024px) {
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  .feature-item {
+    width: 45%; /* Adjust feature item width */
+  }
+
+  .testimonials {
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .about-content img {
+    width: 100%; /* Make image responsive */
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em; /* Adjust hero heading size */
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}
+
+/* For devices with a max width of 768px (mobile) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navbar items */
+    padding: 10px 5%; /* Adjust padding */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items */
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .features-container {
+    flex-direction: column; /* Stack feature items */
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%; /* Full width for smaller screens */
+  }
+
+  .hero-section {
+    height: auto; /* Adjust height for content */
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2em; /* Smaller heading */
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .dashboard-header h2 {
+    font-size: 2rem; /* Adjust dashboard heading */
+  }
+
+  .dashboard-header p {
+    font-size: 1rem;
+  }
+
+  .testimonial img {
+    width: 70px; /* Smaller avatar size */
+    height: 70px;
+  }
+}
+
+/* For devices with a max width of 480px (small mobile) */
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 1.5rem; /* Smaller title size */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8em; /* Adjust hero heading */
+  }
+
+  .hero-content p {
+    font-size: 0.9em; /* Smaller paragraph text */
+  }
+
+  .about-content p {
+    font-size: 1em; /* Smaller text size */
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
